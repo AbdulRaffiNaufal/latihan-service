@@ -4,7 +4,7 @@
 Buat proyek web menggunakan link berikut [start.spring.io](https://start.spring.io/), kemudian pilih Maven Project, Bahasanya Java. Pilih Spring Boot versi 2.6.6. Lalu buat project metadata group dengan nama : **com.naufal**, Artifact dan name dengan nama : **latihan-service**, serta package name dengan nama : **com.naufal.latihanservice**. Disini saya pakai jdk versi 18 dan apache netbeans versi 15. Kemudian tambahkan Dependencies **Spring Web**.kemudian Generate dan extrack dari zip menjadi file kemudian import ke dalam apache netbeans.
 #### Langkah 2:
 Buka proyek di IDE Anda dan cari file **LatihanServiceApplication.java** di **Source Packages** pada folder **com.naufal.latihan.service**. Sekarang ubah isi file dengan menambahkan metode tambahan dan anotasi yang ditunjukkan pada kode di bawah ini. Anda dapat menyalin dan menempelkan kode atau cukup mengetiknya.
-#### Langkah 3:
+
 ```java
 package com.naufal.latihan.service;
 import org.springframework.boot.SpringApplication;
