@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 @SpringBootApplication
 @RestController
 public class LatihanServiceApplication {
@@ -19,7 +20,7 @@ public class LatihanServiceApplication {
         SpringApplication.run(LatihanServiceApplication.class, args);
     }
     @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "word") String name) {
+    public String hello(@RequestParam(value = "name", defaultValue = "world") String name) {
         return String.format("Hello %s!", name);
     }
 }
@@ -33,3 +34,4 @@ Run file **LatihanServiceApplication.java**.
 
 Beberapa baris terakhir di sini memberi tahu kami bahwa Spring telah dimulai. Server Apache Tomcat tertanam pada Spring Boot bertindak sebagai server web dan mendengarkan permintaan pada `localhost` port `8010`. Buka browser Anda dan di bilah alamat di bagian atas enter `http://localhost:8010/hello`. Anda harus mendapatkan respons ramah yang bagus seperti ini:
 
+![Screenshot 2022-09-26 222057](https://user-images.githubusercontent.com/113502265/192316990-fed70b74-5f0d-4052-b878-b3a5bea30467.png)
