@@ -26,6 +26,7 @@ public class LatihanServiceApplication {
 }
 ```
 Metode ``hello()`` yang di tambahkan dirancang untuk mengambil parameter String yang disebut ``name``, dan kemudian menggabungkan parameter ini dengan kata ``"Hello"``dalam kode. Ini berarti bahwa jika Anda menyetel nama Anda ke ``“World”`` dalam permintaan, responsnya adalah ``“Hello World”``.
+
 Anotasi `@RestController` memberi tahu Spring bahwa kode ini menjelaskan titik akhir yang harus tersedia melalui web. `@GetMapping(“/hello”)` memberi tahu Spring untuk menggunakan method `hello()` untuk menjawab permintaan yang dikirim ke alamat  `http://localhost:8010/hello`. Akhirnya, `@RequestParamSpring` memberi tahu Spring untuk mengharapkan nilai `name` dalam permintaan, tetapi jika tidak ada, itu akan menggunakan kata "Dunia" secara default.
 #### Langkah 3:
 Run file **LatihanServiceApplication.java**.
